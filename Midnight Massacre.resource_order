@@ -15,6 +15,14 @@
     {"name":"Notes","order":13,"path":"folders/Notes.yy",},
     {"name":"Extensions","order":14,"path":"folders/Extensions.yy",},
     {"name":"Particle Systems","order":15,"path":"folders/Particle Systems.yy",},
+    {"name":"Walls","order":2,"path":"folders/Sprites/Walls.yy",},
+    {"name":"Jacket","order":5,"path":"folders/Sprites/Jacket.yy",},
   ],
-  "ResourceOrderSettings": [],
+  "ResourceOrderSettings": [
+    {"name":"WallV","order":4,"path":"sprites/WallV/WallV.yy",},
+    {"name":"BrickWallV","order":1,"path":"sprites/BrickWallV/BrickWallV.yy",},
+    {"name":"WallH","order":3,"path":"sprites/WallH/WallH.yy",},
+    {"name":"FloorSprites","order":1,"path":"sprites/FloorSprites/FloorSprites.yy",},
+    {"name":"FloorTiles","order":1,"path":"tilesets/FloorTiles/FloorTiles.yy",},
+  ],
 }
