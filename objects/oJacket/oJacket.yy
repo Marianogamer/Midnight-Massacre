@@ -30,8 +30,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "JacketWalkUnarmed",
-    "path": "sprites/JacketWalkUnarmed/JacketWalkUnarmed.yy",
+    "name": "Dot",
+    "path": "sprites/Dot/Dot.yy",
   },
   "spriteMaskId": null,
   "visible": true,

@@ -22,3 +22,16 @@ else
 	image_speed = 1;
 	walkTimer ++;
 }
+
+if (keyboard_check(vk_shift))
+{
+	if (!instance_exists(oTarget))
+	{
+		crosstarget = instance_create_layer(mouse_x, mouse_y, "Instances", oTarget);
+	}
+	
+	crosstarget.x = clamp(mouse_x, x - 75, x + 75);
+	crosstarget.y = clamp(mouse_y, y - 75, y + 75);
+	crosstarget.timer = 5;
+	oCamera.target = crosstarget;
+}
