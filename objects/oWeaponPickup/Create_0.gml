@@ -1,4 +1,4 @@
-ammo = 0;
+ammoPickup = 0;
 
 start = 0;
 dest = 3;
