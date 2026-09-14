@@ -1,4 +1,4 @@
-image_angle = point_direction(x,y, mouse_x, mouse_y);
+playerAngle = point_direction(x,y, mouse_x, mouse_y);
 
 
 var left = keyboard_check(ord("A"));
@@ -9,8 +9,20 @@ var down = keyboard_check(ord("S"));
 var horizontalspeed = right - left;
 var verticalspeed = down - up;
 
-x += horizontalspeed * walkSpeed;
-y += verticalspeed * walkSpeed;
+var result_h = horizontalspeed * walkSpeed;
+var result_y = verticalspeed * walkSpeed;
+
+
+if (! place_meeting(x + result_h, y, oWallH))
+{
+	x += horizontalspeed * walkSpeed;
+}
+
+if ( !place_meeting(x, y + result_y, oWallH))
+{
+	y += verticalspeed * walkSpeed;
+}
+
 
 if (xprevious == x and yprevious == y)
 {
@@ -39,7 +51,7 @@ if (keyboard_check(vk_shift))
 if (mouse_check_button_released(mb_right) and weapon_sprite != JacketWalkUnarmed)
 {
 	var throwWeapon = instance_create_layer(x, y, "Instances", oWeaponThrow);
-	throwWeapon.direction = image_angle;
+	throwWeapon.direction = playerAngle;
 	throwWeapon.speed = random_range(7,10);
 	throwWeapon.sprite_index = M16;
 	
@@ -77,11 +89,11 @@ if (mouse_check_button(mb_left) and ammoPlayer > 0)
 		{
 			case "M16":
 			
-				shotX = x + lengthdir_x(43, image_angle-22);
-				shotY = y + lengthdir_y(16, image_angle-22);
+				shotX = x + lengthdir_x(43, playerAngle-22);
+				shotY = y + lengthdir_y(16, playerAngle-22);
 			
 				var shot = instance_create_layer(x,y, "Instances", oBullet);
-				shot.direction = image_angle + random_range(-oControl.spread_M16, oControl.spread_M16);
+				shot.direction = playerAngle + random_range(-oControl.spread_M16, oControl.spread_M16);
 				shot.speed     = oControl.ShotSpeed_M16;
 				shot.friction  = oControl.friction_M16;
 				shot.damage    = oControl.damage_M16;
@@ -92,11 +104,11 @@ if (mouse_check_button(mb_left) and ammoPlayer > 0)
 				
 			case "Uzi":
 			
-				shotX = x + lengthdir_x(42, image_angle-30);
-				shotY = y + lengthdir_y(16, image_angle-30);
+				shotX = x + lengthdir_x(42, playerAngle-30);
+				shotY = y + lengthdir_y(16, playerAngle-30);
 			
 				var shot = instance_create_layer(x,y, "Instances", oBullet);
-				shot.direction = image_angle + random_range(-oControl.spread_Uzi, oControl.spread_Uzi);
+				shot.direction = playerAngle + random_range(-oControl.spread_Uzi, oControl.spread_Uzi);
 				shot.speed     = oControl.ShotSpeed_Uzi;
 				shot.friction  = oControl.friction_Uzi;
 				shot.damage    = oControl.damage_Uzi;
@@ -107,16 +119,33 @@ if (mouse_check_button(mb_left) and ammoPlayer > 0)
 				
 			case "MP5":
 			
-				shotX = x + lengthdir_x(42, image_angle-30);
-				shotY = y + lengthdir_y(16, image_angle-30);
+				shotX = x + lengthdir_x(42, playerAngle-30);
+				shotY = y + lengthdir_y(16, playerAngle-30);
 			
 				var shot = instance_create_layer(x,y, "Instances", oBullet);
-				shot.direction = image_angle + random_range(-oControl.spread_MP5, oControl.spread_MP5);
+				shot.direction = playerAngle + random_range(-oControl.spread_MP5, oControl.spread_MP5);
 				shot.speed     = oControl.ShotSpeed_MP5;
 				shot.friction  = oControl.friction_MP5;
 				shot.damage    = oControl.damage_MP5;
 		
 				shoot_timer = oControl.shoot_timer_MP5;
+				ammoPlayer--;
+				break;
+				
+			case "Shotgun":
+			
+				shotX = x + lengthdir_x(43, playerAngle-22);
+				shotY = y + lengthdir_y(16, playerAngle-22);
+			for (var i = 0; i < 6; i++)
+			{
+				var shot = instance_create_layer(x,y, "Instances", oBullet);
+				shot.direction = playerAngle + random_range(-oControl.spread_Shotgun, oControl.spread_Shotgun);
+				shot.speed     = oControl.ShotSpeed_Shotgun;
+				shot.friction  = oControl.friction_Shotgun;
+				shot.damage    = oControl.damage_Shotgun;
+			}
+		
+				shoot_timer = oControl.shoot_timer_Shotgun;
 				ammoPlayer--;
 				break;
 		}

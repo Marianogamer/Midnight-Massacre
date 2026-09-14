@@ -23,6 +23,10 @@
     {"name":"Walls","order":2,"path":"folders/Sprites/Walls.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
+    {"name":"Zombies","order":12,"path":"folders/Sprites/Zombies.yy",},
+    {"name":"Fast","order":1,"path":"folders/Sprites/Zombies/Fast.yy",},
+    {"name":"Boomer","order":2,"path":"folders/Sprites/Zombies/Boomer.yy",},
+    {"name":"Spitter","order":3,"path":"folders/Sprites/Zombies/Spitter.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"JacketLegs","order":1,"path":"sprites/JacketLegs/JacketLegs.yy",},
@@ -49,6 +53,7 @@
     {"name":"FloorTiles","order":1,"path":"tilesets/FloorTiles/FloorTiles.yy",},
     {"name":"Bullet","order":10,"path":"sprites/Bullet/Bullet.yy",},
     {"name":"oBullet","order":9,"path":"objects/oBullet/oBullet.yy",},
+    {"name":"sCollisionMask","order":11,"path":"sprites/sCollisionMask/sCollisionMask.yy",},
     {"name":"JacketWalkUzi","order":3,"path":"sprites/JacketWalkUzi/JacketWalkUzi.yy",},
     {"name":"Katana","order":1,"path":"sprites/Katana/Katana.yy",},
     {"name":"sControl","order":8,"path":"sprites/sControl/sControl.yy",},

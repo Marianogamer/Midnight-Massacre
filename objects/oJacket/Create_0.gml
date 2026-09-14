@@ -1,5 +1,6 @@
 walkSpeed = 3;
 walkTimer = 0;
+playerAngle = 0;
 
 crosstarget = noone;
 
