@@ -97,6 +97,7 @@
     {"id":{"name":"JacketWalkMP5","path":"sprites/JacketWalkMP5/JacketWalkMP5.yy",},},
     {"id":{"name":"oControl","path":"objects/oControl/oControl.yy",},},
     {"id":{"name":"WoodTiles","path":"sprites/WoodTiles/WoodTiles.yy",},},
+    {"id":{"name":"oSpawner","path":"objects/oSpawner/oSpawner.yy",},},
     {"id":{"name":"oBaseballBat","path":"objects/oBaseballBat/oBaseballBat.yy",},},
     {"id":{"name":"oWallV","path":"objects/oWallV/oWallV.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},

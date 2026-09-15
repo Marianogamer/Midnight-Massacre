@@ -1,11 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oBullet",
+  "name": "oSpawner",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"oDestructible","path":"objects/oDestructible/oDestructible.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"oWallH","path":"objects/oWallH/oWallH.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -30,9 +29,9 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "Bullet",
-    "path": "sprites/Bullet/Bullet.yy",
+    "name": "sControl",
+    "path": "sprites/sControl/sControl.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

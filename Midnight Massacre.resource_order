@@ -67,6 +67,7 @@
     {"name":"JacketDead","order":8,"path":"sprites/JacketDead/JacketDead.yy",},
     {"name":"JacketWalkMP5","order":5,"path":"sprites/JacketWalkMP5/JacketWalkMP5.yy",},
     {"name":"oControl","order":8,"path":"objects/oControl/oControl.yy",},
+    {"name":"oSpawner","order":14,"path":"objects/oSpawner/oSpawner.yy",},
     {"name":"oWallV","order":2,"path":"objects/oWallV/oWallV.yy",},
   ],
 }

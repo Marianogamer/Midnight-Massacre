@@ -34,7 +34,7 @@ spread_MP5 = 10;
 spread_Uzi = 12;
 spread_Shotgun = 5;
 
-reload_M16 = 20;
-reload_Uzi = 12;
-reload_MP5 = 15;
+reload_M16 = 50;
+reload_Uzi = 25;
+reload_MP5 = 25;
 reload_Shotgun = 20;

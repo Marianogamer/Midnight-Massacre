@@ -76,6 +76,67 @@ if (mouse_check_button_released(mb_right) and weapon_sprite != JacketWalkUnarmed
 	ammoPlayer = 0;
 }
 
+
+var current_max_ammo = 30;
+var current_reload_time = 60;
+
+switch (weapon) {
+    case "M16":
+        current_max_ammo = 30;
+        current_reload_time = oControl.reload_M16;
+        break;
+        
+    case "Shotgun":
+        current_max_ammo = 6;
+        current_reload_time = oControl.reload_Shotgun;
+        break;
+        
+    case "Uzi":
+        current_max_ammo = 32;
+        current_reload_time = oControl.reload_Uzi;
+        break;
+        
+    case "MP5":
+        current_max_ammo = 32;
+        current_reload_time = oControl.reload_MP5;
+        break;
+}
+
+
+var try_shoot = mouse_check_button(mb_left) || mouse_check_button_pressed(mb_left);
+
+if ((keyboard_check_pressed(ord("R")) || (try_shoot && ammoPlayer <= 0)) && !is_reloading && ammoPlayer < current_max_ammo) {
+    is_reloading = true;
+    reload_timer = current_reload_time;
+}
+
+
+if (is_reloading) {
+    
+    if (weapon == "Shotgun" && mouse_check_button_pressed(mb_left) && ammoPlayer > 0) {
+        is_reloading = false;
+    } else {
+        reload_timer -= 1;
+        
+        if (reload_timer <= 0) {
+            if (weapon == "Shotgun") {
+                ammoPlayer += 1;
+
+                if (ammoPlayer < current_max_ammo) {
+                    reload_timer = current_reload_time; 
+                } else {
+                    is_reloading = false;
+                }
+            } else {
+                ammoPlayer = current_max_ammo; 
+                is_reloading = false;
+            }
+        }
+        
+        exit;
+    }
+}
+
 if (mouse_check_button(mb_left) and ammoPlayer > 0)
 {
 	
