@@ -90,6 +90,7 @@
     {"id":{"name":"sControl","path":"sprites/sControl/sControl.yy",},},
     {"id":{"name":"JacketWalkShotgun","path":"sprites/JacketWalkShotgun/JacketWalkShotgun.yy",},},
     {"id":{"name":"oJacket","path":"objects/oJacket/oJacket.yy",},},
+    {"id":{"name":"JacketDead","path":"sprites/JacketDead/JacketDead.yy",},},
     {"id":{"name":"JacketWalkMP5","path":"sprites/JacketWalkMP5/JacketWalkMP5.yy",},},
     {"id":{"name":"oControl","path":"objects/oControl/oControl.yy",},},
     {"id":{"name":"WoodTiles","path":"sprites/WoodTiles/WoodTiles.yy",},},

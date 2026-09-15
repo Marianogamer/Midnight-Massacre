@@ -61,6 +61,7 @@
     {"name":"Katana","order":1,"path":"sprites/Katana/Katana.yy",},
     {"name":"sControl","order":8,"path":"sprites/sControl/sControl.yy",},
     {"name":"JacketWalkShotgun","order":4,"path":"sprites/JacketWalkShotgun/JacketWalkShotgun.yy",},
+    {"name":"JacketDead","order":8,"path":"sprites/JacketDead/JacketDead.yy",},
     {"name":"JacketWalkMP5","order":5,"path":"sprites/JacketWalkMP5/JacketWalkMP5.yy",},
     {"name":"oControl","order":8,"path":"objects/oControl/oControl.yy",},
     {"name":"oWallV","order":2,"path":"objects/oWallV/oWallV.yy",},

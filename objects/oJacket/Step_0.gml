@@ -151,3 +151,21 @@ if (mouse_check_button(mb_left) and ammoPlayer > 0)
 		}
 	}
 }
+
+if (is_dead) {
+    walkSpeed = 0;
+    
+    if (image_index >= image_number - 1) {
+        image_speed = 0;
+        image_index = image_number - 1;
+    }
+    exit;
+}
+
+
+if (hp <= 0) {
+    is_dead = true;
+    sprite_index = JacketDead;
+    image_index = 0;
+    image_speed = 1;
+}
