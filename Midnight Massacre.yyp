@@ -67,6 +67,7 @@
     {"id":{"name":"sCamera","path":"sprites/sCamera/sCamera.yy",},},
     {"id":{"name":"Shotgun","path":"sprites/Shotgun/Shotgun.yy",},},
     {"id":{"name":"oMP5","path":"objects/oMP5/oMP5.yy",},},
+    {"id":{"name":"oGrid","path":"objects/oGrid/oGrid.yy",},},
     {"id":{"name":"WallH","path":"sprites/WallH/WallH.yy",},},
     {"id":{"name":"Dot","path":"sprites/Dot/Dot.yy",},},
     {"id":{"name":"MP5","path":"sprites/MP5/MP5.yy",},},

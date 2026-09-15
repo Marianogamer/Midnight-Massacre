@@ -45,6 +45,7 @@
     {"name":"sCamera","order":9,"path":"sprites/sCamera/sCamera.yy",},
     {"name":"Shotgun","order":2,"path":"sprites/Shotgun/Shotgun.yy",},
     {"name":"oMP5","order":1,"path":"objects/oMP5/oMP5.yy",},
+    {"name":"oGrid","order":12,"path":"objects/oGrid/oGrid.yy",},
     {"name":"WallH","order":3,"path":"sprites/WallH/WallH.yy",},
     {"name":"Dot","order":7,"path":"sprites/Dot/Dot.yy",},
     {"name":"MP5","order":1,"path":"sprites/MP5/MP5.yy",},
