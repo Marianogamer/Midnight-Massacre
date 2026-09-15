@@ -1,19 +1,18 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oJacket",
+  "name": "BasicZombie",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oDestructible","path":"objects/oDestructible/oDestructible.yy",},"propertyId":{"name":"hp","path":"objects/oDestructible/oDestructible.yy",},"value":"100",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oDestructible","path":"objects/oDestructible/oDestructible.yy",},"propertyId":{"name":"hp","path":"objects/oDestructible/oDestructible.yy",},"value":"75",},
   ],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Zombies",
+    "path": "folders/Objects/Zombies.yy",
   },
   "parentObjectId": {
     "name": "oDestructible",
@@ -35,8 +34,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "Dot",
-    "path": "sprites/Dot/Dot.yy",
+    "name": "BasicZombieWalk",
+    "path": "sprites/BasicZombieWalk/BasicZombieWalk.yy",
   },
   "spriteMaskId": null,
   "visible": true,
