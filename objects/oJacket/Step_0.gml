@@ -24,6 +24,7 @@ if ( !place_meeting(x, y + result_y, oWallH))
 }
 
 
+
 if (xprevious == x and yprevious == y)
 {
 	image_speed = 0;

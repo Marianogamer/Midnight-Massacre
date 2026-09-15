@@ -1,4 +1,4 @@
-walkSpeed = 3;
+walkSpeed = 1.5;
 walkTimer = 0;
 playerAngle = 0;
 
